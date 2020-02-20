@@ -17,7 +17,7 @@ class UsuariosSeeder extends Seeder
             
             DB::table('usuarios')->insert([
                 'nome' => $faker->name,
-                'data_nasc' => $faker->dateTime($max = 'now'),
+//                'data_nasc' => $faker->dateTime($max = 'now'),
                 'sexo' => rand(1,3 )
             ]);
         }

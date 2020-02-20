@@ -11,6 +11,19 @@
 |
 */
 
+
+
+
+
+Route::resource('/apostas','ApostaController');
+
+
+Route::get('imagem/arquivo/{nome}', [
+    'as' => 'imagem.file',
+    'uses' => 'ImagemController@getImagemFile'
+]);
+
+
 Route::get('/', function () {
     return view('welcome');
 });
